@@ -1,0 +1,26 @@
+{
+  "name": "nodesample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_PATH=. NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_PATH=. NODE_ENV=production node index.js",
+    "nodemon_prodstart": "cross-env NODE_PATH=. NODE_ENV=production nodemon index.js",
+    "pm2start": "cross-env NODE_PATH=. NODE_ENV=production pm2 start --name colormatchgame node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "html": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
